@@ -15,6 +15,7 @@ body {
 }
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 .align-center {
   align-items: center;
@@ -164,4 +165,44 @@ header {
   100% {
     transform: translateY(0px);
   }
+}
+/* logo slider area style  */
+.logo-slider-area {
+  padding-bottom: 90px;
+}
+.logo-wrapper {
+  justify-content: space-between;
+  padding: 30px 130px;
+  position: relative;
+}
+/* .logo-wrapper:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0.5px;
+  background-image: radial-gradient(
+    at 50% 0,
+    blue 0%,
+    red 50%,
+    transparent 62%
+  );
+  background-size: 100% 1px;
+} */
+.logo-wrapper:before,
+.logo-wrapper:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0.5px;
+  background-image: radial-gradient(at 50%, #c0ccda5d, transparent 63%);
+  background-size: 100% 1px;
+}
+.logo-wrapper:after {
+  top: 100%;
 }
