@@ -207,8 +207,14 @@
     font-size: 18px;
   }
 }
-
-/* @media (max-width: 1199px) {  }
-
-
-@media (max-width: 1399px) {  } */
+@media only screen and (min-width: 1500px) {
+  .container {
+    width: 1160px;
+  }
+  .offer-box {
+    margin: 0px 175px;
+  }
+  .footer-content p {
+    padding: 0;
+  }
+}
