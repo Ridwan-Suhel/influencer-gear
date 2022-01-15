@@ -125,6 +125,9 @@ hero area style start
 .half-col {
   width: 50%;
 }
+.hero-content .hero-btn {
+  margin-top: 25px;
+}
 .btn {
   display: inline-block;
   padding: 12px 24px;
