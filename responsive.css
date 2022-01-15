@@ -113,6 +113,7 @@
   .logo-wrapper:before,
   .logo-wrapper:after {
     height: 1px;
+    background-image: radial-gradient(at 50%, #c0ccda5d, transparent 85%);
   }
   .title {
     font-size: 26px;

@@ -35,6 +35,21 @@ header style start
 header {
   padding: 30px 0px;
 }
+.nav-anim {
+  opacity: 0;
+  animation: slideInNav 300ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slideInNav {
+  0% {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .logo {
   font-size: 24px;
   font-weight: 900;
@@ -42,8 +57,6 @@ header {
 }
 .menu-wrapper {
   justify-content: space-between;
-}
-.main-menu {
 }
 .main-menu li {
   margin-left: 35px;
@@ -74,9 +87,40 @@ hero area style start
   font-size: 48px;
   line-height: 1.3;
 }
+.title-anim {
+  opacity: 0;
+  animation: slideInTitle 300ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slideInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .hero-content p {
   font-weight: 500;
   margin: 15px 0px;
+}
+.title-para-anim {
+  opacity: 0;
+  animation: slideInPara 300ms ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+}
+@keyframes slideInPara {
+  0% {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .half-col {
   width: 50%;
@@ -99,6 +143,22 @@ hero area style start
 .btn:hover i {
   padding-left: 10px;
 }
+.title-btn-anim {
+  opacity: 0;
+  animation: slideInbtn 400ms ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+@keyframes slideInbtn {
+  0% {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .hero-product {
   display: flex;
   justify-content: flex-end;
@@ -113,18 +173,20 @@ hero area style start
   align-items: center;
   border-radius: 50%;
   border: 1px solid #f1e4ff;
-  transition: all 0.5s ease-in-out;
-
   position: relative;
-  opacity: 1;
-  animation: heroAnim-ring-1 0.5s ease-in-out;
+  opacity: 0;
+  animation: heroAnim-ring-1 300ms ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 @keyframes heroAnim-ring-1 {
   0% {
     opacity: 0;
+    transform: scale(0.7);
   }
   100% {
     opacity: 1;
+    transform: scale(1);
   }
 }
 .hero-product .img-wrapper:before {
@@ -135,20 +197,19 @@ hero area style start
   height: 300px;
   border-radius: 50%;
   background: #f1e4ff;
-  transition: all 0.5s ease-in-out;
 
-  opacity: 1;
-  animation: heroAnim-ring-2 1s ease-in-out;
+  animation: heroAnim-ring-2 300ms ease-in-out;
+  animation-fill-mode: forwards;
   animation-delay: 1s;
+  opacity: 0;
 }
 @keyframes heroAnim-ring-2 {
   0% {
+    transform: scale(0.5);
     opacity: 0;
   }
-  50% {
-    transform: scale(1.3);
-  }
   100% {
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -157,16 +218,19 @@ hero area style start
   z-index: 1;
   transition: all 0.5s ease-in-out;
   transform: translateY(0px);
-  /* opacity: 1; */
 
   animation: heroAnim-img 0.5s ease-in-out;
-  animation-delay: 1.1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 @keyframes heroAnim-img {
   0% {
+    opacity: 0;
     transform: translateY(-100px);
   }
   100% {
+    opacity: 1;
     transform: translateY(0px);
   }
 }
